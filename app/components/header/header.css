@@ -1,0 +1,54 @@
+.header {
+transition: 0.3s ease;
+}
+.header .social-tap {
+    background: var(--yellow);
+    color: white;
+}
+
+.header .top-area {
+    color: white;
+    padding: 10px 0;
+}
+
+
+/* .header .logo {
+    gap: 10px;
+}
+
+.header .logo-txt {
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.header .logo-line2 {
+    font-size: 11px;
+}
+
+.header .logo-line0 {
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--gray);
+}
+
+.header .logo-line0 span {
+    background-color: white;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35px;
+}
+.header .btn {
+    background-color: var(--yellow);
+    color: white;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 10px;
+} */

@@ -2,26 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GeometricSlab';
+  src: url('/fonts/GeometricSlab.otf') format('truetype');
+  font-weight: bolder;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'gill-sans-mt';
+  src: url('/fonts/gill-sans-mt.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --yellow: #fdec01;
+  --gray: #545b65;
+  --text-color: #424346;
+}
+.yellow {
+  color: var(--yellow);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.container {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
