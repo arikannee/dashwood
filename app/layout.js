@@ -8,8 +8,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Smart Home 4U",
-  description: "Expert Electrical Solutions",
+  title: "DASHWOOD",
+  description: "Electrical Services",
 };
 
 export default function RootLayout({ children }) {
