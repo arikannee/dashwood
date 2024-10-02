@@ -9,7 +9,7 @@ export default function Home() {
       />
       <div className="flex container lg absolute inset-0 items-center">
         <div className=" flex-auto flex-col justify-center justify-items-start text-white pb-5 text-shadow-lg lg:text-shadow-none">
-          <h1 class="banner-text text-white font-semibold  text-3xl md:text-5xl sm:text-4xl">
+          <h1 className="banner-text text-white font-semibold  text-3xl md:text-5xl sm:text-4xl">
             Efficient, Safe, <br />
             and Affordable
             <br /> <span className="yellow">Electrical Services</span>
