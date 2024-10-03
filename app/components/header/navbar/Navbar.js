@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import "./Navbar.css";
+import servicesData from '../../../../data/services-data'; 
 
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -107,54 +108,16 @@ const Navbar = () => {
                 className="py-2 text-sm text-white"
                 aria-labelledby="dropdownNavbarLink"
               >
-                <li>
-                  <Link
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-500 hover:text-[#fdec01]"
-                  >
-                    Solar Energy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-500 hover:text-[#fdec01]"
-                  >
-                    EV Chargers
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-500 hover:text-[#fdec01]"
-                  >
-                    Heat Pumps
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-500 hover:text-[#fdec01]"
-                  >
-                    Wind Power
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-500 hover:text-[#fdec01]"
-                  >
-                    Smart Home Solutions
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-500 hover:text-[#fdec01]"
-                  >
-                    Domestic & Commercial Electrical Work
-                  </Link>
-                </li>
+                {servicesData.map((service, index) => (
+                  <li key={index}>
+                    <Link
+                      href={`/${service.link}`}
+                      className="block px-4 py-2 hover:bg-gray-500 hover:text-[#fdec01]"
+                    >
+                      {service.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </li>
