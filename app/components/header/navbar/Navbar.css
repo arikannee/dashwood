@@ -8,13 +8,36 @@
     font-size: 23px;
     line-height: 1.2;
 }
-.nav .logo-line1 {
+
+/* .nav .logo-line1 {
     font-family: 'GeometricSlab', serif;
+} */
+.nav .logo-line1 {
+    -webkit-font-smoothing: antialiased;
+    /* For clearer text on macOS/iOS */
+    -moz-osx-font-smoothing: grayscale;
+    /* For Mac systems */
+}
+
+.logo-line1 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+    /* Explicitly set the weight */
+    font-style: italic;
+    /* Ensure italic style */
+    text-shadow:
+        -0.2px -0.2px 0 white,
+        0.2px -0.2px 0 white,
+        -0.2px 0.2px 0 white,
+        0.2px 0.2px 0 white;
+        font-size: 26.5px;
+        position: absolute;
+        top: 6px;
 }
 
 .nav .logo-line2 {
-    font-size: 18.3px;
-    font-family: 'gill-sans-mt', sans-serif;
+    font-size: 16.8px;
+    line-height: 0.9;
 }
 
 
@@ -29,9 +52,33 @@
     position: absolute;
     top: 10px;
 }
+
 .nav .btn {
     background-color: var(--yellow);
     font-weight: 700;
     padding: 8px 20px;
     border-radius: 10px;
+}
+
+@keyframes shine-vertical {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.shine-effect {
+    background: linear-gradient(transparent 30%, rgba(255, 255, 255, 0.6) 50%, transparent 70%);
+    width: 15px;
+    height: 40px;
+    transform: translateY(-100%);
+    animation: shine-vertical 2s infinite;
+    opacity: 0.6;
 }

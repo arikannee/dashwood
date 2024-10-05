@@ -3,7 +3,23 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import "./Navbar.css";
-import servicesData from '../../../../data/services-data'; 
+import servicesData from "../../../../data/services-data";
+import { Zilla_Slab } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
+
+const zillaSlab = Zilla_Slab({
+  weight: "700",
+  style: "italic",
+  subsets: ["latin"],
+  fallback: ["serif"],
+});
+
+const roboto = Nunito_Sans({
+  weight: "800",
+  style: "italic",
+  subsets: ["latin"],
+  fallback: ["san-serif"],
+});
 
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -16,18 +32,20 @@ const Navbar = () => {
     <div className="nav max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
       <Link href="/" className="flex logo flex-auto">
         <Image
-          className="inline-flex"
+          className="inline-flex "
           src="/images/logo.png"
           alt="logo"
           width={86}
           height={40}
         />
         <div className="logo-txt inline-flex">
-          <div className="logo-line1">
+          <div className={`logo-line1 ${zillaSlab.className} font-bold`}>
             <span>DASHWOOD</span>
           </div>
           <div className="logo-line2">
-            <span className="yellow">Electrical Services</span>
+            <span className={`yellow ${roboto.className}`}>
+              Electrical Services
+            </span>
           </div>
         </div>
       </Link>
