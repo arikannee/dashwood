@@ -9,9 +9,6 @@
     line-height: 1.2;
 }
 
-/* .nav .logo-line1 {
-    font-family: 'GeometricSlab', serif;
-} */
 .nav .logo-line1 {
     -webkit-font-smoothing: antialiased;
     /* For clearer text on macOS/iOS */
@@ -22,17 +19,15 @@
 .logo-line1 {
     font-family: 'Zilla Slab', serif;
     font-weight: 700;
-    /* Explicitly set the weight */
     font-style: italic;
-    /* Ensure italic style */
     text-shadow:
         -0.2px -0.2px 0 white,
         0.2px -0.2px 0 white,
         -0.2px 0.2px 0 white,
         0.2px 0.2px 0 white;
-        font-size: 26.5px;
-        position: absolute;
-        top: 6px;
+    font-size: 26.5px;
+    position: absolute;
+    top: 6px;
 }
 
 .nav .logo-line2 {
@@ -60,25 +55,32 @@
     border-radius: 10px;
 }
 
-@keyframes shine-vertical {
+@keyframes glow {
     0% {
-        transform: translateY(-100%);
+      filter: drop-shadow(0 0 5px #fdec01) drop-shadow(0 0 10px #fdec01);
     }
-
     50% {
-        transform: translateY(100%);
+      filter: drop-shadow(0 0 15px #fdec01) drop-shadow(0 0 30px #fdec01);
     }
-
     100% {
-        transform: translateY(100%);
+      filter: drop-shadow(0 0 5px #fdec01) drop-shadow(0 0 10px #fdec01);
     }
-}
+  }
 
-.shine-effect {
-    background: linear-gradient(transparent 30%, rgba(255, 255, 255, 0.6) 50%, transparent 70%);
-    width: 15px;
-    height: 40px;
-    transform: translateY(-100%);
-    animation: shine-vertical 2s infinite;
-    opacity: 0.6;
-}
+  .de {
+    gap: 5px;
+  }
+  .lightning {
+    animation: glow 2s infinite;
+    right: 26.5px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .letter {
+    height: auto;
+  }

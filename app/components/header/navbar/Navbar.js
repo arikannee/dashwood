@@ -31,13 +31,41 @@ const Navbar = () => {
   return (
     <div className="nav max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
       <Link href="/" className="flex logo flex-auto">
-        <Image
+        <div className="de relative flex">
+          {/* <Image
           className="inline-flex "
           src="/images/logo.png"
           alt="logo"
           width={86}
           height={40}
-        />
+        /> */}
+          {/* "D" SVG */}
+          <Image
+            src="/images/D.svg"
+            alt="D"
+            className="letter"
+            height={40}
+            width={44.7}
+          />
+
+          {/* Lightning Icon with Glowing Effect */}
+          <Image
+            src="/images/lightning.svg"
+            alt="Lightning"
+            className="lightning absolute"
+            height={41.2}
+            width={28.2}
+          />
+
+          {/* "E" SVG */}
+          <Image
+            src="/images/E.svg"
+            alt="E"
+            className="letter"
+            height={40}
+            width={40.4}
+          />
+        </div>
         <div className="logo-txt inline-flex">
           <div className={`logo-line1 ${zillaSlab.className} font-bold`}>
             <span>DASHWOOD</span>
