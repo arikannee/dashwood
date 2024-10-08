@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 @font-face {
   font-family: 'GeometricSlab';
   src: url('/fonts/GeometricSlab.otf') format('truetype');
@@ -29,6 +32,7 @@
 html {
   overflow-x: hidden;
   width: 100%;
+  background-color: rgb(229 231 235);
 }
 
 body {
@@ -36,6 +40,7 @@ body {
   background: var(--background);
   font-family: Montserrat, sans-serif;
   font-weight: 500;
+  color: #1f2937;
 }
 
 @layer utilities {
@@ -49,4 +54,36 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
+}
+
+section {
+  padding: 40px 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+/* h1 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 18px;
+} */
+p, ul, ol {
+  margin-bottom: 1rem;
+}
+
+.check-list {
+  list-style: none;
+  padding-left: 0;
+}
+.check-list li {
+  position: relative;
+  padding-left: 25px;
+}
+.check-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #e9d600;
 }

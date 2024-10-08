@@ -107,7 +107,7 @@ const Navbar = () => {
         }`}
         id="navbar-dropdown"
       >
-        <ul className="flex flex-col font-medium  mt-4 border border-gray-300 rounded-lg lg:space-x-8 lg:flex-row lg:mt-0 lg:border-0">
+        <ul className="flex flex-col font-medium  mt-4 border border-gray-300 rounded-lg lg:space-x-8 lg:flex-row lg:mt-0 lg:border-0 mb-0">
           <li>
             <Link
               href="#"

@@ -1,0 +1,6 @@
+@media (min-width:640px) {
+    .about-home .div1,
+    .about-home .div2 {
+        min-width: 620px;
+    }
+}
