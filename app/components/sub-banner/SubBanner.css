@@ -1,0 +1,9 @@
+.sub-banner .slick-slide {
+    display: inline-block;
+    /* Ensures the cards are aligned horizontally */
+}
+
+.sub-banner {
+    overflow: hidden;
+    /* Hide overflow to prevent scrollbars */
+}
