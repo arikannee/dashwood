@@ -4,8 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import "./Navbar.css";
 import servicesData from "../../../../data/services-data";
-import { Zilla_Slab } from "next/font/google";
-import { Nunito_Sans } from "next/font/google";
+import { Zilla_Slab, Nunito_Sans } from 'next/font/google';
 
 const zillaSlab = Zilla_Slab({
   weight: "700",
@@ -32,14 +31,6 @@ const Navbar = () => {
     <div className="nav max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
       <Link href="/" className="flex logo flex-auto">
         <div className="de relative flex">
-          {/* <Image
-          className="inline-flex "
-          src="/images/logo.png"
-          alt="logo"
-          width={86}
-          height={40}
-        /> */}
-          {/* "D" SVG */}
           <Image
             src="/images/D.svg"
             alt="D"
@@ -47,8 +38,6 @@ const Navbar = () => {
             height={40}
             width={44.7}
           />
-
-          {/* Lightning Icon with Glowing Effect */}
           <Image
             src="/images/lightning.svg"
             alt="Lightning"
@@ -56,8 +45,6 @@ const Navbar = () => {
             height={41.2}
             width={28.2}
           />
-
-          {/* "E" SVG */}
           <Image
             src="/images/E.svg"
             alt="E"
@@ -67,7 +54,7 @@ const Navbar = () => {
           />
         </div>
         <div className="logo-txt inline-flex">
-          <div className={`logo-line1 ${zillaSlab.className} font-bold`}>
+          <div className={`logo-line1 ${zillaSlab.className}`}>
             <span>DASHWOOD</span>
           </div>
           <div className="logo-line2">

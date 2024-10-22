@@ -11,6 +11,7 @@
   font-weight: bolder;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'gill-sans-mt';
   src: url('/fonts/gill-sans-mt.ttf') format('truetype');
@@ -25,6 +26,7 @@
   --gray: #545b65;
   --text-color: #424346;
 }
+
 .yellow {
   color: var(--yellow);
 }
@@ -59,10 +61,18 @@ body {
 section {
   padding: 40px 0;
 }
-h1,h2,h3,h4,h5,h6 {
+
+@media (min-width:1024px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+
 /* h1 {
   font-size: 36px;
 }
@@ -77,10 +87,12 @@ p, ul, ol {
   list-style: none;
   padding-left: 0;
 }
+
 .check-list li {
   position: relative;
   padding-left: 25px;
 }
+
 .check-list li::before {
   content: '✔';
   position: absolute;

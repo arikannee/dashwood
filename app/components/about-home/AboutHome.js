@@ -4,7 +4,7 @@ export default function AboutHome() {
   return (
     <section className="about-home bg-gray-200">
       <div className="container lg flex flex-col-reverse sm:flex-row relative">
-        <div className="div1 w-full sm:w-1/2 sm:absolute sm:drop-shadow-lg sm:rounded-lg overflow-hidden">
+        <div className="div1 w-full sm:w-1/2 sm:drop-shadow-lg sm:rounded-lg overflow-hidden">
           <img
             src="/images/aboutBanner.jpg"
             alt="about banner"
@@ -46,10 +46,10 @@ export default function AboutHome() {
             </div>
             <div className="w-full sm:w-2/6 text-center">
               <a
-                class="btn text-gray-600 relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-[#fdec01] rounded hover:bg-[#fdec01] group py-1.5 px-2.5"
+                className="btn text-gray-600 relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-[#fdec01] rounded hover:bg-gray-600 group py-1.5 px-2.5"
                 href="/about"
               >
-                <span class="relative w-full font-bold text-left transition-colors duration-300 ease-in-out group-hover:text-[#fdec01]">
+                <span className="relative w-full font-bold text-left transition-colors duration-300 ease-in-out group-hover:text-[#fdec01]">
                   Read More
                 </span>
               </a>

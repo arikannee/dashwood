@@ -1,6 +1,6 @@
 import AboutHome from "./components/about-home/AboutHome";
 import RequestService from "./components/RequestService/RequestService";
-import SubBanner from "./components/sub-banner/SubBanner";
+import ServicesHome from "./components/services-home/ServicesHome";
 
 export default function Home() {
   return (
@@ -31,6 +31,7 @@ export default function Home() {
       </div>
       <RequestService />
       <AboutHome />
+      <ServicesHome/>
     </div>
   );
 }

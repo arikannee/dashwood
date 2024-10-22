@@ -34,7 +34,7 @@ const SocialTap = () => {
   };
 
   return (
-    <div className="header sticky top-0 z-50">
+    <div className="header sticky top-0 z-50 shadow-lg">
       {/* Social Tap - Only shows the first line with a dropdown on small screens */}
       <div className={`social-tap ${isVisible ? "block" : "absolute"}`}>
         <div className="container lg text-gray-600 flex flex-col sm:flex-row text-sm font-medium leading-7 sm:leading-5">
