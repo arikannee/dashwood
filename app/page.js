@@ -1,4 +1,5 @@
 import AboutHome from "./components/about-home/AboutHome";
+import GalleryHome from "./components/gallery-home/GalleryHome";
 import RequestService from "./components/RequestService/RequestService";
 import ServicesHome from "./components/services-home/ServicesHome";
 
@@ -32,6 +33,7 @@ export default function Home() {
       <RequestService />
       <AboutHome />
       <ServicesHome/>
+      <GalleryHome/>
     </div>
   );
 }
