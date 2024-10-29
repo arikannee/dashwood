@@ -2,6 +2,8 @@ import AboutHome from "./components/about-home/AboutHome";
 import GalleryHome from "./components/gallery-home/GalleryHome";
 import RequestService from "./components/RequestService/RequestService";
 import ServicesHome from "./components/services-home/ServicesHome";
+import Footer from "./components/footer/Footer"
+import ContactHome from "./components/contect-home/ContactHome";
 
 export default function Home() {
   return (
@@ -34,6 +36,8 @@ export default function Home() {
       <AboutHome />
       <ServicesHome/>
       <GalleryHome/>
+      <ContactHome/>
+      <Footer/>
     </div>
   );
 }
