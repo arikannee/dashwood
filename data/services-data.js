@@ -1,11 +1,19 @@
 const servicesData = [
   {
-    title: "Solar Energy",
-    link: "solar-energy",
-    icon: "solar-energy.svg",
+    title: "House Battery",
+    link: "house-battery",
+    icon: "house-battery.svg",
     description:
-      "Harness the power of the sun to generate clean, renewable energy for your home or business.",
+      "Home energy storage to optimize power use, lower grid reliance, and ensure backup during outages.",
   },
+
+  // {
+  //   title: "Solar Energy",
+  //   link: "solar-energy",
+  //   icon: "solar-energy.svg",
+  //   description:
+  //     "Harness the power of the sun to generate clean, renewable energy for your home or business.",
+  // },
   {
     title: "EV Chargers",
     link: "ev-chargers",
