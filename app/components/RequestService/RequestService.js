@@ -146,7 +146,7 @@ export default function RequestService() {
             <input
               type="text"
               name="name"
-              placeholder="Your Name"
+              placeholder="Your Name *"
               className="block w-full p-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0"
               required
             />
@@ -159,7 +159,7 @@ export default function RequestService() {
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="Your Email *"
                 className="block w-full p-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0"
                 required
               />
@@ -180,7 +180,7 @@ export default function RequestService() {
           {/* Service (Select) */}
           <div className="w-full lg:w-1/4">
             <select
-              name="service"
+              name="service *"
               value={selectedService} // Use state to control the selected value
               onChange={handleServiceChange}
               className="block w-full p-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0"
