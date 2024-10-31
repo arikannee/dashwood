@@ -55,7 +55,7 @@ export default function ContactHome() {
         <div className="flex justify-center items-center">
           <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 lg:px-0 relative">
             {/* Contact Form */}
-            <div className="bg-white p-10 pb-6 rounded-lg shadow-lg relative">
+            <div className="bg-white p-5 sm:p-10 sm:pb-6 rounded-lg shadow-lg relative">
               <form onSubmit={sendEmail}>
                 <div className="mb-4">
                   <label className="block text-gray-700">Name *</label>
