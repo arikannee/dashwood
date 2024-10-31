@@ -53,7 +53,7 @@ export default function ContactHome() {
         </div>
 
         <div className="flex justify-center items-center">
-          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 lg:px-0 relative">
+          <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-0 relative">
             {/* Contact Form */}
             <div className="bg-white p-5 sm:p-10 sm:pb-6 rounded-lg shadow-lg relative">
               <form onSubmit={sendEmail}>
@@ -116,7 +116,7 @@ export default function ContactHome() {
                     : "/images/yellow-room-dark.jpg"
                 }
                 alt="Background with scroll-triggered switching"
-                className="rounded-lg transition-opacity duration-1000 lg:h-screen"
+                className="rounded-lg transition-opacity duration-1000"
               />
             </div>
           </div>
