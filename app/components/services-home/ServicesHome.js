@@ -47,7 +47,7 @@ export default function ServicesHome() {
               key={index}
               className="bg-white p-5 pt-10 col-span-12 sm:col-span-6 lg:col-span-4 text-center rounded-lg hover:scale-105 ease-in-out duration-300"
             >
-              <a href={`services/${service.link}`}>
+              <a href={`/services?service=${service.link}`}>
                 <img
                   src={`/images/icon/${service.icon}`}
                   className="w-14 m-auto pb-4 icon"

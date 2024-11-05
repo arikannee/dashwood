@@ -10,6 +10,7 @@ export default function ContactHome() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
+        // Toggle image based on whether the section is in view
         setIsLightImage(entry.isIntersecting);
       },
       { threshold: 0.5 } // Trigger when at least 50% of the section is visible
@@ -17,7 +18,10 @@ export default function ContactHome() {
 
     if (sectionRef.current) observer.observe(sectionRef.current);
 
-    return () => observer.unobserve(sectionRef.current);
+    return () => {
+      // Only unobserve if sectionRef.current exists
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
   }, []);
 
   // Function to handle form submission

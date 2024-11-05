@@ -3,6 +3,7 @@ const servicesData = [
     title: "House Battery",
     link: "house-battery",
     icon: "house-battery.svg",
+    image: "house-battery.jpg",
     description:
       "Home energy storage to optimize power use, lower grid reliance, and ensure backup during outages.",
   },
@@ -18,6 +19,7 @@ const servicesData = [
     title: "EV Chargers",
     link: "ev-chargers",
     icon: "ev-charger.svg",
+    image: "ev-charger.jpg",
     description:
       "Install electric vehicle charging stations at your home or workplace for convenient and eco-friendly transportation.",
   },

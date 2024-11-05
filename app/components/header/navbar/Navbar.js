@@ -97,7 +97,7 @@ const Navbar = () => {
         <ul className="flex flex-col font-medium  mt-4 border border-gray-300 rounded-lg lg:space-x-8 lg:flex-row lg:mt-0 lg:border-0 mb-0">
           <li>
             <Link
-              href="#"
+              href="/"
               className="block py-2 px-3 hover:text-[#fdec01]"
               aria-current="page"
             >
@@ -144,7 +144,7 @@ const Navbar = () => {
                 {servicesData.map((service, index) => (
                   <li key={index}>
                     <Link
-                      href={`/${service.link}`}
+                      href={`/services?service=${service.link}`}
                       className="block px-4 py-2 hover:bg-gray-500 hover:text-[#fdec01]"
                     >
                       {service.title}
