@@ -73,7 +73,6 @@ const servicesData = [
     details: (
       <div>
         <p>
-          {" "}
           Our house battery solutions provide enhanced energy security and
           independence from the grid. These batteries store excess energy from
           solar panels or the grid, ensuring backup power when needed and
@@ -124,7 +123,7 @@ const servicesData = [
         </ul>
         <h4>Our Process:</h4>
 
-        <ol className="ul-18-start num-list space-y-3">
+        <ol className="ul-18-start num-list bold-list space-y-3">
           <li>
             <b>Assessment:</b> Our team evaluates your energy consumption
             patterns and backup needs.

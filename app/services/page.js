@@ -137,9 +137,9 @@ function ServicesContent() {
                       </div>
                     </div>
 
-                    <p className="text-gray-600 p-6 lg:p-10">
+                    <div className="text-gray-600 p-6 lg:p-10">
                       {service.details}
-                    </p>
+                    </div>
                   </div>
                 ))}
             </div>

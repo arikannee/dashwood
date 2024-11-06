@@ -108,3 +108,6 @@ p, ul, ol {
 .ul-18-start {
   padding-left: 18px;
 }
+.bold-list li::marker {
+  font-weight: 600;
+}
