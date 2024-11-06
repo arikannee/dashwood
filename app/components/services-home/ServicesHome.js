@@ -29,13 +29,16 @@ export default function ServicesHome() {
   }, []);
 
   // Slice data based on mobile view or showMore state
-  const visibleServices = isMobileView && !showMore ? servicesData.slice(0, 3) : servicesData;
+  const visibleServices =
+    isMobileView && !showMore ? servicesData.slice(0, 3) : servicesData;
 
   return (
     <section className="bg-gray-800 service-home">
       <div className="container lg">
         <div className="text-center pb-5">
-          <h1 className="text-lg m-1 text-[#e9d600] font-medium">OUR SERVICES</h1>
+          <h1 className="text-lg m-1 text-[#e9d600] font-medium">
+            OUR SERVICES
+          </h1>
           <h2 className="text-3xl text-white leading-tight">
             Domestic, Commercial <br /> & Industrial Services
           </h2>
@@ -53,7 +56,9 @@ export default function ServicesHome() {
                   className="w-14 m-auto pb-4 icon"
                   alt={service.title}
                 />
-                <h3 className="text-lg text-gray-700 mb-1 block">{service.title}</h3>
+                <h3 className="text-lg text-gray-700 mb-1 block">
+                  {service.title}
+                </h3>
                 <p className="text-gray-500">{service.description}</p>
               </a>
             </div>

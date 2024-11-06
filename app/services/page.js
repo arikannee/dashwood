@@ -29,7 +29,7 @@
 //               <button
 //                 key={service.link}
 //                 onClick={() => handleTabClick(service.link)}
-//                 className={`w-full lg:text-left text-center px-4 py-2 rounded-lg font-medium transition  
+//                 className={`w-full lg:text-left text-center px-4 py-2 rounded-lg font-medium transition
 //             ${
 //               activeTab === service.link
 //                 ? "bg-[#fdec01] text-gray-800"
@@ -130,14 +130,15 @@ function ServicesContent() {
                         backgroundImage: `url(/images/services/${service.image})`,
                       }}
                     >
-                      <div className="bg-black w-full h-full bg-opacity-70 flex items-center justify-center -mt-[2px]">
-                        <h2 className="text-2xl lg:text-4xl font-semibold text-white mb-0">
+                      <div className="bg-black w-full h-full bg-opacity-70 flex flex-col items-center justify-center -mt-[2px]">
+                        <h2 className="text-xl sm:text-2xl lg:text-4xl font-semibold text-white mb-0 p-4 text-center">
                           {service.title}
                         </h2>
                       </div>
                     </div>
-                    <p className="text-gray-600 text-lg lg:text-xl p-6 lg:p-10">
-                      {service.description}
+
+                    <p className="text-gray-600 p-6 lg:p-10">
+                      {service.details}
                     </p>
                   </div>
                 ))}
