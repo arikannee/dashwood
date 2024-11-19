@@ -13,17 +13,18 @@ export default function RequestService() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_es0xemn",
+        "template_t8h73dq",
         form.current,
-        "YOUR_USER_ID"
+        "dE9jVLT2-NcfIa14z"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("Request sent successfully!");
+          e.target.reset(); // Clear the form on success
         },
         (error) => {
-          console.log(error.text);
+          alert("Failed to send the Request, please try again.");
         }
       );
   };
@@ -180,7 +181,7 @@ export default function RequestService() {
           {/* Service (Select) */}
           <div className="w-full lg:w-1/4">
             <select
-              name="service *"
+              name="service"
               value={selectedService} // Use state to control the selected value
               onChange={handleServiceChange}
               className="block w-full p-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0"
