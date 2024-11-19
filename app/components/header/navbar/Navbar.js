@@ -186,7 +186,6 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
-      <HashScrollHandler />
     </div>
   );
 };

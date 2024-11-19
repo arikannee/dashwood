@@ -4,7 +4,6 @@ import RequestService from "./components/RequestService/RequestService";
 import ServicesHome from "./components/services-home/ServicesHome";
 import Footer from "./components/footer/Footer"
 import ContactHome from "./components/contect-home/ContactHome";
-import HashScrollHandler from './components/HashScrollHandler';
 
 export default function Home() {
   return (
@@ -39,7 +38,6 @@ export default function Home() {
       <GalleryHome/>
       <ContactHome/>
       <Footer/>
-      {/* <HashScrollHandler /> */}
     </div>
   );
 }
