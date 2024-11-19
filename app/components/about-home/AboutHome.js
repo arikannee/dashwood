@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./AboutHome.css";
 export default function AboutHome() {
   return (
-    <section className="about-home bg-gray-200">
+    <section id="about" className="about-home bg-gray-200">
       <div className="container lg flex flex-col-reverse sm:flex-row relative">
         <div className="div1 w-full sm:w-1/2 sm:drop-shadow-lg sm:rounded-lg overflow-hidden">
           <img

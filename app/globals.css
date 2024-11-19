@@ -35,6 +35,7 @@ html {
   overflow-x: hidden;
   width: 100%;
   background-color: rgb(229 231 235);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -82,6 +83,7 @@ h5 {
 h4 {
   font-size: 20px;
 }
+
 p, ul, ol {
   margin-bottom: 1rem;
 }
@@ -102,12 +104,27 @@ p, ul, ol {
   left: 0;
   color: #e9d600;
 }
+
 .num-list {
   list-style: decimal
 }
+
+.dot-list li::before {
+  content: none;
+}
+
+.dot-list li {
+  padding-left: 0;
+}
+
+.dot-list {
+  list-style: disc;
+}
+
 .ul-18-start {
   padding-left: 18px;
 }
+
 .bold-list li::marker {
   font-weight: 600;
 }

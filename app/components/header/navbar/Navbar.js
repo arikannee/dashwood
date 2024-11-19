@@ -1,10 +1,12 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import "./Navbar.css";
 import servicesData from "../../../../data/services-data";
-import { Zilla_Slab, Nunito_Sans } from 'next/font/google';
+import { Zilla_Slab, Nunito_Sans } from "next/font/google";
+import HashScrollHandler from "../../HashScrollHandler";
 
 const zillaSlab = Zilla_Slab({
   weight: "700",
@@ -27,8 +29,13 @@ const Navbar = () => {
     setDropdownOpen((prev) => !prev);
   };
 
+  // Close the dropdown when clicking on a navigation link
+  const closeDropdown = () => {
+    setDropdownOpen(false);
+  };
+
   return (
-    <div className="nav max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+    <div className="nav max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
       <Link href="/" className="flex logo flex-auto">
         <div className="de relative flex">
           <Image
@@ -66,7 +73,7 @@ const Navbar = () => {
       </Link>
       <button
         type="button"
-        className="inline-flex items-center  w-10 h-10 justify-center text-sm text-gray-400 rounded-lg lg:hidden hover:bg-gray-700 focus:outline-none border border-gray-300"
+        className="inline-flex items-center w-10 h-10 justify-center text-sm text-gray-400 rounded-lg lg:hidden hover:bg-gray-700 focus:outline-none border border-gray-300"
         aria-controls="navbar-dropdown"
         aria-expanded={isDropdownOpen}
         onClick={toggleDropdown}
@@ -94,18 +101,14 @@ const Navbar = () => {
         }`}
         id="navbar-dropdown"
       >
-        <ul className="flex flex-col font-medium  mt-4 border border-gray-300 rounded-lg lg:space-x-8 lg:flex-row lg:mt-0 lg:border-0 mb-0">
-          <li>
-            <Link
-              href="/"
-              className="block py-2 px-3 hover:text-[#fdec01]"
-              aria-current="page"
-            >
+        <ul className="flex flex-col font-medium mt-4 border border-gray-300 rounded-lg lg:space-x-8 lg:flex-row lg:mt-0 lg:border-0 mb-0">
+          <li onClick={closeDropdown}>
+            <Link href="/" className="block py-2 px-3 hover:text-[#fdec01]">
               Home
             </Link>
           </li>
-          <li>
-            <Link href="#" className="block py-2 px-3 hover:text-[#fdec01]">
+          <li onClick={closeDropdown}>
+            <Link href="/#about" className="block py-2 px-3 hover:text-[#fdec01]">
               About
             </Link>
           </li>
@@ -142,7 +145,7 @@ const Navbar = () => {
                 aria-labelledby="dropdownNavbarLink"
               >
                 {servicesData.map((service, index) => (
-                  <li key={index}>
+                  <li key={index} onClick={closeDropdown}>
                     <Link
                       href={`/services?service=${service.link}`}
                       className="block px-4 py-2 hover:bg-gray-500 hover:text-[#fdec01]"
@@ -154,13 +157,19 @@ const Navbar = () => {
               </ul>
             </div>
           </li>
-          <li>
-            <Link href="#" className="block py-2 px-3 hover:text-[#fdec01]">
+          <li onClick={closeDropdown}>
+            <Link
+              href="/#gallery"
+              className="block py-2 px-3 hover:text-[#fdec01]"
+            >
               Gallery
             </Link>
           </li>
-          <li>
-            <Link href="#" className="block py-2 px-3 hover:text-[#fdec01]">
+          <li onClick={closeDropdown}>
+            <Link
+              href="/#contact-us"
+              className="block py-2 px-3 hover:text-[#fdec01]"
+            >
               Contact
             </Link>
           </li>
@@ -177,6 +186,7 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
+      <HashScrollHandler />
     </div>
   );
 };

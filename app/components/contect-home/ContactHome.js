@@ -47,7 +47,7 @@ export default function ContactHome() {
   };
 
   return (
-    <section ref={sectionRef} className="bg-gray-800">
+    <section id="contact-us" ref={sectionRef} className="bg-gray-800">
       <div className="container lg">
         <div className="text-center pb-5">
           <h1 className="text-lg m-1 text-[#e9d600] font-medium">CONTACT US</h1>
