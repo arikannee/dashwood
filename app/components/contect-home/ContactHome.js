@@ -30,10 +30,10 @@ export default function ContactHome() {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID", // Replace with your service ID
-        "YOUR_TEMPLATE_ID", // Replace with your template ID
+        "service_es0xemn", // Replace with your service ID
+        "template_e9ddum9", // Replace with your template ID
         e.target,
-        "YOUR_USER_ID" // Replace with your user ID
+        "dE9jVLT2-NcfIa14z" // Replace with your user ID
       )
       .then(
         (result) => {
@@ -65,7 +65,7 @@ export default function ContactHome() {
                   <label className="block text-gray-700">Name *</label>
                   <input
                     type="text"
-                    name="user_name"
+                    name="name"
                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-0"
                     required
                   />
@@ -74,7 +74,7 @@ export default function ContactHome() {
                   <label className="block text-gray-700">Email *</label>
                   <input
                     type="email"
-                    name="user_email"
+                    name="email"
                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-0"
                     required
                   />
@@ -83,7 +83,7 @@ export default function ContactHome() {
                   <label className="block text-gray-700">Phone</label>
                   <input
                     type="tel"
-                    name="user_phone"
+                    name="phone"
                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-0"
                     inputMode="numeric"
                   />
