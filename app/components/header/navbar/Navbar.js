@@ -6,7 +6,6 @@ import Image from "next/image";
 import "./Navbar.css";
 import servicesData from "../../../../data/services-data";
 import { Zilla_Slab, Nunito_Sans } from "next/font/google";
-import HashScrollHandler from "../../HashScrollHandler";
 
 const zillaSlab = Zilla_Slab({
   weight: "700",
