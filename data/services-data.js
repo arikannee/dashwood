@@ -91,7 +91,7 @@ const servicesData = [
     title: "Solar Energy",
     link: "solar-energy",
     icon: "solar-energy.svg",
-    image: "electrician.jpg",
+    image: "solar.jpg",
     description:
       "Harness the power of the sun to generate clean, renewable energy for your home or business.",
     details: (
