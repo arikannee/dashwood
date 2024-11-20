@@ -94,24 +94,72 @@ const servicesData = [
     image: "electrician.jpg",
     description:
       "Harness the power of the sun to generate clean, renewable energy for your home or business.",
-    details: (<div>
-      
-      Solar energy is a sustainable and eco-friendly solution to power your home or business. By utilizing the sun's abundant energy, you can reduce your reliance on traditional power sources, lower your electricity bills, and contribute to a cleaner environment. Whether you're looking to install solar panels for the first time or upgrade an existing system, our comprehensive solar energy services are tailored to meet your specific needs.
-
-Benefits of Solar Energy
-Clean and Renewable: Solar energy is a green alternative that reduces your carbon footprint and supports environmental sustainability.
-Cost Savings: Generate your own electricity to decrease utility bills and protect against rising energy costs.
-Energy Independence: Reduce reliance on grid power and enjoy greater energy security.
-Incentives: Take advantage of government tax credits, rebates, and other financial incentives for solar installations.
-Low Maintenance: Solar panels require minimal maintenance and have a long lifespan, making them a cost-effective investment.
-Our Solar Energy Services
-Custom Design and Installation: Tailored solar panel systems optimized for your property and energy needs.
-Energy Audits and Consultation: Assess your energy usage and determine the most efficient solar solutions.
-System Upgrades: Enhance the efficiency of existing solar setups with modern technology.
-Battery Storage Solutions: Store excess energy for use during nighttime or power outages.
-Monitoring and Maintenance: Keep your solar system performing at its best with regular inspections and servicing.
-Solar energy is more than just a power source—it's a step toward a sustainable future. Let us help you harness the sun's potential to power your life efficiently and responsibly.
-    </div>),
+    details: (
+      <div>
+        <p>
+          {" "}
+          Solar energy is a sustainable and eco-friendly solution to power your
+          home or business. By utilizing the sun's abundant energy, you can
+          reduce your reliance on traditional power sources, lower your
+          electricity bills, and contribute to a cleaner environment. Whether
+          you're looking to install solar panels for the first time or upgrade
+          an existing system, our comprehensive solar energy services are
+          tailored to meet your specific needs.
+        </p>
+        <h4>Benefits of Solar Energy</h4>
+        <ul className="check-list space-y-3">
+          <li>
+            <b>Clean and Renewable:</b> Solar energy is a green alternative that
+            reduces your carbon footprint and supports environmental
+            sustainability.
+          </li>
+          <li>
+            <b>Cost Savings:</b> Generate your own electricity to decrease
+            utility bills and protect against rising energy costs.
+          </li>
+          <li>
+            <b>Energy Independence:</b> Reduce reliance on grid power and enjoy
+            greater energy security.
+          </li>
+          <li>
+            <b>Incentives:</b> Take advantage of government tax credits,
+            rebates, and other financial incentives for solar installations.
+          </li>
+          <li>
+            <b>Low Maintenance:</b> Solar panels require minimal maintenance and
+            have a long lifespan, making them a cost-effective investment.
+          </li>
+        </ul>
+        <h4>Our Solar Energy Services</h4>
+        <ul className="check-list space-y-3">
+          <li>
+            <b>Custom Design and Installation:</b> Tailored solar panel systems
+            optimized for your property and energy needs.
+          </li>
+          <li>
+            <b>Energy Audits and Consultation:</b> Assess your energy usage and
+            determine the most efficient solar solutions.
+          </li>
+          <li>
+            <b>System Upgrades:</b> Enhance the efficiency of existing solar
+            setups with modern technology.
+          </li>
+          <li>
+            <b>Battery Storage Solutions:</b> Store excess energy for use during
+            nighttime or power outages.
+          </li>
+          <li>
+            <b>Monitoring and Maintenance:</b> Keep your solar system performing
+            at its best with regular inspections and servicing.
+          </li>
+        </ul>
+        <p>
+          Solar energy is more than just a power source—it's a step toward a
+          sustainable future. Let us help you harness the sun's potential to
+          power your life efficiently and responsibly.
+        </p>
+      </div>
+    ),
   },
   {
     title: "House Battery",
