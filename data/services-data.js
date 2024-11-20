@@ -9,7 +9,6 @@ const servicesData = [
     details: (
       <div>
         <p>
-          {" "}
           Our licensed electricians offer a comprehensive range of electrical
           services, covering everything from simple repairs to complex
           installations for residential and commercial properties. We emphasize
@@ -19,7 +18,7 @@ const servicesData = [
         <h4>Services Offered:</h4>
         <ul className="check-list space-y-3">
           <li>
-            <h5 className="text-md mb-1">Residential Services:</h5>
+            <h5 className="text-lg mb-1">Residential Services:</h5>
             <ul className="ul-18-start dot-list">
               <li>
                 <b>Lighting Installation:</b> Expert setup of indoor, outdoor,
@@ -44,7 +43,7 @@ const servicesData = [
             </ul>
           </li>
           <li>
-            <h5 className="text-md mb-1">Commercial Services:</h5>
+            <h5 className="text-lg mb-1">Commercial Services:</h5>
             <ul className="ul-18-start dot-list">
               <li>
                 <b>Emergency Lighting Systems:</b> Design, installation, and
@@ -67,7 +66,7 @@ const servicesData = [
             </ul>
           </li>
           <li>
-            <h5 className="text-md mb-1">Safety & Compliance:</h5>
+            <h5 className="text-lg mb-1">Safety & Compliance:</h5>
             <ul className="ul-18-start dot-list">
               <li>
                 Our team adheres to local and national electrical codes to
@@ -95,7 +94,24 @@ const servicesData = [
     image: "electrician.jpg",
     description:
       "Harness the power of the sun to generate clean, renewable energy for your home or business.",
-    details: <div></div>,
+    details: (<div>
+      
+      Solar energy is a sustainable and eco-friendly solution to power your home or business. By utilizing the sun's abundant energy, you can reduce your reliance on traditional power sources, lower your electricity bills, and contribute to a cleaner environment. Whether you're looking to install solar panels for the first time or upgrade an existing system, our comprehensive solar energy services are tailored to meet your specific needs.
+
+Benefits of Solar Energy
+Clean and Renewable: Solar energy is a green alternative that reduces your carbon footprint and supports environmental sustainability.
+Cost Savings: Generate your own electricity to decrease utility bills and protect against rising energy costs.
+Energy Independence: Reduce reliance on grid power and enjoy greater energy security.
+Incentives: Take advantage of government tax credits, rebates, and other financial incentives for solar installations.
+Low Maintenance: Solar panels require minimal maintenance and have a long lifespan, making them a cost-effective investment.
+Our Solar Energy Services
+Custom Design and Installation: Tailored solar panel systems optimized for your property and energy needs.
+Energy Audits and Consultation: Assess your energy usage and determine the most efficient solar solutions.
+System Upgrades: Enhance the efficiency of existing solar setups with modern technology.
+Battery Storage Solutions: Store excess energy for use during nighttime or power outages.
+Monitoring and Maintenance: Keep your solar system performing at its best with regular inspections and servicing.
+Solar energy is more than just a power source—it's a step toward a sustainable future. Let us help you harness the sun's potential to power your life efficiently and responsibly.
+    </div>),
   },
   {
     title: "House Battery",
