@@ -6,8 +6,87 @@ const servicesData = [
     image: "domestic.jpg",
     description:
       "Professional electrical installations, repairs, and maintenance for both residential and commercial properties.",
-    details:
-      "Our licensed electricians provide a full range of electrical services, from simple repairs to complex installations, for both residential and commercial properties. We prioritize safety and compliance with local regulations, ensuring all work is done to the highest standard. Services include lighting installation, panel upgrades, wiring, troubleshooting, and maintenance. For commercial clients, we also offer specialized services like emergency lighting, security system wiring, and energy-efficient retrofitting. Our goal is to deliver reliable, safe, and cost-effective electrical solutions tailored to your needs.",
+    details: (
+      <div>
+        <p>
+          {" "}
+          Our licensed electricians offer a comprehensive range of electrical
+          services, covering everything from simple repairs to complex
+          installations for residential and commercial properties. We emphasize
+          safety, compliance, and quality in all our work, ensuring every
+          project meets the highest standards."
+        </p>
+        <h4>Services Offered:</h4>
+        <ul className="check-list space-y-3">
+          <li>
+            <h5 className="text-md mb-1">Residential Services:</h5>
+            <ul className="ul-18-start dot-list">
+              <li>
+                <b>Lighting Installation:</b> Expert setup of indoor, outdoor,
+                and landscape lighting to improve ambiance and functionality.
+              </li>
+              <li>
+                <b>Panel Upgrades:</b> Modernization of electrical panels to
+                accommodate increased power needs and ensure safety.
+              </li>
+              <li>
+                <b>Wiring & Rewiring:</b> Full and partial wiring services,
+                including additions or upgrades for home renovations.
+              </li>
+              <li>
+                <b>Troubleshooting & Repairs:</b> Quick identification and
+                repair of electrical issues, minimizing downtime and hazards.
+              </li>
+              <li>
+                <b>Preventative Maintenance:</b> Routine inspections and
+                maintenance to prolong the lifespan of electrical systems.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5 className="text-md mb-1">Commercial Services:</h5>
+            <ul className="ul-18-start dot-list">
+              <li>
+                <b>Emergency Lighting Systems:</b> Design, installation, and
+                testing of emergency lighting for compliance and safety.
+              </li>
+              <li>
+                <b>Security System Wiring:</b> Professional wiring for alarms,
+                cameras, and access control systems to enhance property
+                security.
+              </li>
+              <li>
+                <b>Energy-Efficient Retrofitting:</b> Upgrading existing systems
+                to energy-efficient solutions to lower operating costs and
+                reduce environmental impact.
+              </li>
+              <li>
+                <b>Commercial Equipment Wiring:</b> Specialized wiring and
+                installation for high-demand equipment or machinery.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5 className="text-md mb-1">Safety & Compliance:</h5>
+            <ul className="ul-18-start dot-list">
+              <li>
+                Our team adheres to local and national electrical codes to
+                ensure all work is safe and compliant.
+              </li>
+              <li>
+                We provide full documentation for inspections, permits, and
+                warranties for added peace of mind.
+              </li>
+              <li>
+                Our goal is to deliver reliable, safe, and cost-effective
+                electrical solutions tailored to your unique needs, whether at
+                home or in a commercial setting.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    ),
   },
   {
     title: "Solar Energy",
@@ -16,32 +95,7 @@ const servicesData = [
     image: "electrician.jpg",
     description:
       "Harness the power of the sun to generate clean, renewable energy for your home or business.",
-    details: (
-      <div>
-        "Our licensed electricians offer a comprehensive range of electrical services, covering everything from simple repairs to complex installations for residential and commercial properties. We emphasize safety, compliance, and quality in all our work, ensuring every project meets the highest standards."
-
-Services Offered:
-
-Residential Services:
-
-Lighting Installation: Expert setup of indoor, outdoor, and landscape lighting to improve ambiance and functionality.
-Panel Upgrades: Modernization of electrical panels to accommodate increased power needs and ensure safety.
-Wiring & Rewiring: Full and partial wiring services, including additions or upgrades for home renovations.
-Troubleshooting & Repairs: Quick identification and repair of electrical issues, minimizing downtime and hazards.
-Preventative Maintenance: Routine inspections and maintenance to prolong the lifespan of electrical systems.
-Commercial Services:
-
-Emergency Lighting Systems: Design, installation, and testing of emergency lighting for compliance and safety.
-Security System Wiring: Professional wiring for alarms, cameras, and access control systems to enhance property security.
-Energy-Efficient Retrofitting: Upgrading existing systems to energy-efficient solutions to lower operating costs and reduce environmental impact.
-Commercial Equipment Wiring: Specialized wiring and installation for high-demand equipment or machinery.
-Safety & Compliance:
-
-Our team adheres to local and national electrical codes to ensure all work is safe and compliant.
-We provide full documentation for inspections, permits, and warranties for added peace of mind.
-Our goal is to deliver reliable, safe, and cost-effective electrical solutions tailored to your unique needs, whether at home or in a commercial setting.
-      </div>
-    )
+    details: <div></div>,
   },
   {
     title: "House Battery",
