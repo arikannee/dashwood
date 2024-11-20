@@ -14,7 +14,7 @@ const servicesData = [
           services, covering everything from simple repairs to complex
           installations for residential and commercial properties. We emphasize
           safety, compliance, and quality in all our work, ensuring every
-          project meets the highest standards."
+          project meets the highest standards.
         </p>
         <h4>Services Offered:</h4>
         <ul className="check-list space-y-3">
