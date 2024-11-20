@@ -6,6 +6,7 @@ import Image from "next/image";
 import "./Navbar.css";
 import servicesData from "../../../../data/services-data";
 import { Zilla_Slab, Nunito_Sans } from "next/font/google";
+import { FaPhone } from "react-icons/fa6";
 
 const zillaSlab = Zilla_Slab({
   weight: "700",
@@ -175,15 +176,15 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex-auto justify-end hidden lg:flex">
-        <Link
-          href="/quote"
+        <a
+          href="tel:+447740272382"
           className="btn text-gray-600 relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-[#fdec01] group py-1.5 px-2.5"
         >
           <span className="w-56 h-48 rounded bg-gray-800 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-          <span className="relative w-full text-left transition-colors duration-300 ease-in-out group-hover:text-[#fdec01]">
-            Get A Quote
+          <span className="relative w-full text-left transition-colors duration-300 ease-in-out group-hover:text-[#fdec01] flex flex-row gap-2 items-center">
+            <FaPhone/> Call Us
           </span>
-        </Link>
+        </a>
       </div>
     </div>
   );
