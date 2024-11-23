@@ -250,8 +250,101 @@ const servicesData = [
     image: "ev-charger.jpg",
     description:
       "Install electric vehicle charging stations at your home or workplace for convenient and eco-friendly transportation.",
-    details:
-      "Our electric vehicle (EV) chargers are designed for both residential and commercial use, providing efficient and convenient charging for your EV at home or at the office. We offer a range of charger types, including Level 2 and fast-charging options, which are compatible with all major EV models. With a focus on safety and ease of use, our chargers come equipped with advanced features such as remote monitoring and automatic shut-off. Our installation team ensures compliance with local codes and offers guidance on the optimal placement for quick and accessible charging.",
+    details: (
+      <div>
+        <p>
+          We provide reliable EV charging solutions tailored for both homes and
+          workplaces. Whether installing a home station or equipping a business
+          with EV chargers, we ensure a seamless process from consultation to
+          installation.
+        </p>
+        <p>
+          Our chargers are compatible with all major EV models, offering fast
+          and efficient charging. With features like remote monitoring, smart
+          controls, and automatic shut-off, they prioritize safety, compliance,
+          and ease of use. Our expert installation team ensures optimal
+          placement and adherence to local regulations.
+        </p>
+        <p>
+          We make EV ownership hassle-free, empowering you to embrace cleaner,
+          greener transportation.
+        </p>
+        <h4>Key Features and Benefits</h4>
+        <ul className="check-list space-y-3">
+          <li>
+            <h5>Wide Compatibility: </h5>Our chargers work seamlessly with all
+            major EV brands and models, ensuring universal usability.
+          </li>
+          <li>
+            <h5>Charger Options:</h5>
+            <ul className="ul-18-start dot-list">
+              <li>
+                <p>
+                  <b>Level 2 Chargers:</b> Perfect for residential and small
+                  business use, providing faster charging compared to standard
+                  outlets.
+                </p>
+              </li>
+              <li>
+                <b>Fast Charging Options:</b> Ideal for commercial setups or
+                high-usage environments, significantly reducing charging time.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>Advanced Safety Features:</h5>
+            <ul className="ul-18-start dot-list">
+              <li>
+                Built-in safety mechanisms such as surge protection and
+                automatic shut-off.
+              </li>
+              <li>
+                Compliance with local safety regulations and electrical
+                standards.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>User-Friendly Features:</h5>
+            <ul className="ul-18-start dot-list">
+              <li>
+                Smart charging technology with remote monitoring and control
+                through mobile apps.
+              </li>
+              <li>
+                Automatic scheduling to charge during off-peak hours for cost
+                savings.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>Professional Installation:</h5>
+            <ul className="ul-18-start dot-list">
+              <li>Expert guidance on charger selection based on your needs.</li>
+              <li>Strategic placement for convenience and efficiency.</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Scalable Solutions:</h5>
+            <ul className="ul-18-start dot-list">
+              <li>Home setups for single EVs.</li>
+              <li>Commercial systems that accommodate multiple vehicles.</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Eco-Friendly and Cost-Efficient:</h5>Transitioning to EVs helps
+            reduce your carbon footprint while cutting fuel costs.
+          </li>
+        </ul>
+        <p>
+          Whether you’re a homeowner wanting the convenience of charging
+          overnight or a business investing in EV infrastructure, we have the
+          expertise to deliver a tailored solution that fits your needs. Make
+          the switch to cleaner energy and reliable charging with our
+          cutting-edge EV solutions!
+        </p>
+      </div>
+    ),
   },
 
   // {
@@ -283,8 +376,57 @@ const servicesData = [
     image: "smarthome.jpg",
     description:
       "Automate and control your home’s lighting, security, and energy usage with smart technology systems.",
-    details:
-      "Upgrade your living space with our smart home solutions, designed to improve comfort, security, and energy efficiency. We offer a comprehensive suite of automation services, including smart lighting, security systems, and energy monitoring. Integrate your devices with a central system for easy, voice-controlled management. Our team will work with you to design a system that fits your lifestyle, enhancing convenience and peace of mind while saving energy through optimized usage. Our solutions are compatible with popular smart home platforms and can be customized to grow with future technologies.",
+    details: (
+      <div>
+        <p>
+          {" "}
+          Enhance your living space with smart home solutions that improve
+          comfort, security, and energy efficiency. Our services include
+          everything from automating lighting to advanced security systems and
+          energy monitoring, all designed to seamlessly fit your lifestyle.
+        </p>
+        <h4>Features and Benefits:</h4>
+        <ul className="check-list space-y-3">
+          <li>
+            <b>Smart Lighting:</b> Automate your lights with schedules, motion
+            detection, or voice commands, creating the perfect ambiance while
+            saving energy.
+          </li>
+          <li>
+            <b>Security Systems:</b> Monitor your home with smart cameras, door
+            sensors, and alarm systems accessible from your smartphone for peace
+            of mind.
+          </li>
+          <li>
+            <b>Energy Monitoring:</b> Track and optimize your energy usage with
+            intuitive dashboards, reducing waste and lowering bills.
+          </li>
+          <li>
+            <b>Voice Control Integration:</b> Sync your system with popular
+            platforms like Alexa, Google Home, or Apple HomeKit for hands-free
+            management.
+          </li>
+          <li>
+            <b>Customized Solutions:</b> Tailored setups designed to meet your
+            specific needs, with scalable options to adapt to future
+            advancements.
+          </li>
+          <li>
+            <b>Remote Access:</b> Control and monitor your home from anywhere,
+            providing flexibility and enhanced convenience.
+          </li>
+        </ul>
+
+        <p>
+          By integrating smart technologies into your home, you not only
+          simplify your life but also create an eco-friendly environment that
+          saves energy and costs. Our solutions are designed to evolve with
+          technological advancements, ensuring your system remains
+          state-of-the-art. Experience the ultimate in modern living with our
+          smart home services.
+        </p>
+      </div>
+    ),
   },
 
   {
