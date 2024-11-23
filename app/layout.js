@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "DASHWOOD - Electrical Services",
   description:
-    "Efficient, safe, and affordable electrical services for residential and commercial properties. At DASHWOOD, we specialize in installations, repairs, and maintenance, ensuring safe and efficient electrical solutions tailored to your needs. Trust our expert electricians to deliver quality workmanship and exceptional service every time.",
+    "Efficient, safe, and affordable electrical services for residential and commercial properties in Richmond, North Yorkshire, and surrounding areas within a one-hour drive. At DASHWOOD, we specialize in installations, repairs, and maintenance, ensuring tailored solutions for your needs. Trust our expert electricians for quality workmanship and exceptional service every time.",
 };
 
 export default function RootLayout({ children }) {

@@ -17,12 +17,17 @@ export default function AboutHome() {
             Your Trusted Partner <br /> for All Electrical Needs
           </h1>
           <p className="border-l-4 border-[#e9d600] pl-5 text-gray-800">
-            At DASHWOOD, we’re dedicated to providing top-tier electrical
+            {/* At DASHWOOD, we’re dedicated to providing top-tier electrical
             solutions for both homes and businesses. Backed by our 100%
             satisfaction guarantee, our expert electricians are ready to handle
             everything from outdoor security lighting installations to
             whole-home generators, ensuring you stay powered during any
-            emergency.
+            emergency. */}
+            At DASHWOOD, we proudly serve Richmond, North Yorkshire, and
+            surrounding areas within a one-hour drive, delivering top-tier
+            electrical services for homes and businesses. Whether you’re in
+            Richmond, Darlington, Catterick, or Northallerton, our expert
+            electricians are here to assist you with:
           </p>
           <ul className="check-list space-y-3 py-2">
             <li>Comprehensive electrical design and layout</li>
