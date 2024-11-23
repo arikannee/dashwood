@@ -52,7 +52,7 @@ export default function AboutHome() {
             <div className="w-full sm:w-2/6 text-center">
               <a
                 className="btn text-gray-600 relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-[#fdec01] rounded hover:bg-gray-600 group py-1.5 px-2.5"
-                href="/about"
+                href="/about-more"
               >
                 <span className="relative w-full font-bold text-left transition-colors duration-300 ease-in-out group-hover:text-[#fdec01]">
                   Read More

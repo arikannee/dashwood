@@ -379,7 +379,6 @@ const servicesData = [
     details: (
       <div>
         <p>
-          {" "}
           Enhance your living space with smart home solutions that improve
           comfort, security, and energy efficiency. Our services include
           everything from automating lighting to advanced security systems and

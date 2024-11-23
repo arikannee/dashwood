@@ -54,7 +54,7 @@ const SocialTap = () => {
           >
             <div className="flex items-center justify-center gap-1">
               <MdLocationPin />
-              Richmond, North Yorkshire
+              Richmond, North Yorkshire, DL10
             </div>
             <div className="flex items-center justify-center gap-1">
               <TbClockHour4 />
