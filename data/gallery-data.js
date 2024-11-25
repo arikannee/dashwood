@@ -1,4 +1,58 @@
 const galleryData = [
+  // {
+  //   title: "",
+  //   subTitle: "",
+  //   link: " ",
+  //   image: "de29.jpg",
+  // },
+  // {
+  //   title: "",
+  //   subTitle: "",
+  //   link: " ",
+  //   image: "de28.jpg",
+  // },
+  // {
+  //   title: "",
+  //   subTitle: "",
+  //   link: " ",
+  //   image: "de27.jpg",
+  // },
+  // {
+  //   title: "",
+  //   subTitle: "",
+  //   link: " ",
+  //   image: "de26.jpg",
+  // },
+  // {
+  //   title: "",
+  //   subTitle: "",
+  //   link: " ",
+  //   image: "de25.jpg",
+  // },
+  // {
+  //   title: "",
+  //   subTitle: "",
+  //   link: " ",
+  //   image: "de24.jpg",
+  // },
+  // {
+  //   title: "",
+  //   subTitle: "",
+  //   link: " ",
+  //   image: "de23.jpg",
+  // },
+  // {
+  //   title: "",
+  //   subTitle: "",
+  //   link: " ",
+  //   image: "de22.jpg",
+  // },
+  // {
+  //   title: "",
+  //   subTitle: "",
+  //   link: " ",
+  //   image: "de21.jpg",
+  // },
   {
     title: "Installation",
     subTitle: "Industrial Lighting",
