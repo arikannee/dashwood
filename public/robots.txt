@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dashwood.online
+
+# Sitemaps
+Sitemap: https://dashwood.online/sitemap.xml
