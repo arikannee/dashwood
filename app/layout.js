@@ -2,6 +2,8 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import Script from "next/script";
+import { usePathname } from "next/navigation";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -15,8 +17,27 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname(); // Current route
+
   return (
     <html lang="en">
+          <head>
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-0WKQS7SQYZ`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0WKQS7SQYZ', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+      </head>
       <body className={`${montserrat.className} antialiased`}>
         <Header />
         {children}
