@@ -21,19 +21,18 @@ export default function RootLayout({ children }) {
           <head>
         {/* Google Analytics */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-0WKQS7SQYZ`}
-          strategy="afterInteractive"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-0WKQS7SQYZ"
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-0WKQS7SQYZ', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', 'G-0WKQS7SQYZ');
           `}
         </Script>
+        
       </head>
       <body className={`${montserrat.className} antialiased`}>
         <Header />
