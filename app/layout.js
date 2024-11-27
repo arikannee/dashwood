@@ -3,7 +3,6 @@ import { Montserrat } from "next/font/google";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Script from "next/script";
-import { usePathname } from "next/navigation";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -17,8 +16,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname(); // Current route
-
   return (
     <html lang="en">
           <head>
