@@ -504,7 +504,9 @@ export default function RequestService() {
       )
       .then(
         () => {
-          alert("Your request has been sent successfully! We will get back to you within 2-3 business days.");
+          alert(
+            "Your request has been sent successfully! We will get back to you within 2-3 business days."
+          );
           actions.resetForm(); // Reset the form
         },
         () => {
@@ -547,7 +549,8 @@ export default function RequestService() {
               service: "",
             }}
             validationSchema={Yup.object({
-              name: Yup.string().required("Name is required"),
+              name: Yup.string().required("Name is required")
+              .min(3, "Name must be at least 3 characters long"),
               email: Yup.string()
                 .email("Invalid email address")
                 .required("Email is required"),
@@ -660,7 +663,10 @@ export default function RequestService() {
             service: "",
           }}
           validationSchema={Yup.object({
-            name: Yup.string().required("Name is required"),
+            name: Yup.string()
+              .required("Name is required")
+              .min(3, "Name must be at least 3 characters long"),
+
             email: Yup.string()
               .email("Invalid email address")
               .required("Email is required"),
