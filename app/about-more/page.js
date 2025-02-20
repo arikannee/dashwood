@@ -44,7 +44,7 @@ export default function AboutMore() {
                   <img src="/images/icon/project.svg" />
                 </div>
                 <div>
-                  <h2 className="text-2xl mb-0">3,000+</h2>Electrical Projects
+                  <h2 className="text-2xl mb-0">3000+</h2>Electrical Projects
                 </div>
               </div>
             </div>
